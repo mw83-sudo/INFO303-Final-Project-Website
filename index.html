@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>When Helping Becomes a Job</title>
+  <style>
+    :root{--bg:#0b0f14;--panel:#121a23;--text:#e8eef7;--muted:#aab7c6;--accent:#86b7ff;--accent2:#ffb86b;--border:#233042;--max:980px;--radius:18px;--shadow:0 12px 30px rgba(0,0,0,.35);--mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);background:radial-gradient(1200px 800px at 20% 0%, #121f33 0%, var(--bg) 55%);color:var(--text);line-height:1.55;}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(11,15,20,.6);border-bottom:1px solid var(--border);}
+    .nav{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;gap:12px;}
+    .brand{display:flex;flex-direction:column;font-weight:700;}
+    .brand small{color:var(--muted);font-weight:500}
+    .links{display:flex;flex-wrap:wrap;gap:10px 14px;justify-content:flex-end;font-size:14px;color:var(--muted);} .links a{color:var(--muted)} .links a.active{color:var(--text)}
+    main{max-width:var(--max);margin:0 auto;padding:26px 16px 60px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch;margin-top:6px;} @media (max-width:860px){.hero{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg, rgba(18,26,35,.92), rgba(18,26,35,.72));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+    .card-inner{padding:18px}
+    h1{font-size:34px;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 14px}
+    .tag{display:inline-flex;gap:8px;padding:7px 11px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--muted);font-size:13px;margin-bottom:10px;} .tag b{color:var(--text)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;} @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text);font-weight:600;font-size:14px;}
+    .btn.primary{border-color:rgba(134,183,255,.35);background:rgba(134,183,255,.14);} 
+    .media{width:100%;aspect-ratio:16/9;background:#0a0f15;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden;}
+    img.resp{width:100%;height:100%;object-fit:cover} video.resp{width:100%;height:100%;object-fit:cover}
+    section{scroll-margin-top:78px}
+    .section-title{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin:26px 0 10px;} .section-title h2{margin:0;font-size:22px} .section-title .hint{color:var(--muted);font-size:13px}
+    .list{margin:10px 0 0;padding:0 0 0 18px;} .list li{margin:6px 0}
+    .ref{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:pre-wrap;word-break:break-word;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:12px;margin:12px 0 0;}
+    footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">When Helping Becomes a Job<small>Older sibling responsibility • parentification • interviews</small></div>
+    <nav class="links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#public">Public</a>
+      <a href="#research">Research</a>
+      <a href="#interviews">Interviews</a>
+      <a href="#gap">Gap</a>
+      <a href="#refs">Refs</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <div class="hero">
+    <div class="card">
+      <div class="card-inner">
+        <div class="tag">Topic: <b>helping</b> → <b>role reversal</b></div>
+        <h1>When does helping become parentification?</h1>
+        <p class="subtitle">This site maps public discourse, research findings, and interview insights.</p>
+        <p>
+          Main idea: separate <b>instrumental</b> vs <b>emotional</b> responsibilities, track <b>timing</b>, and measure <b>support/fairness</b>.
+        </p>
+        <p>
+          <a class="btn primary" href="#interviews">Go to interviews</a>
+          <a class="btn" href="#refs">Sources</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="media"><img class="resp" src="assets/images/header-illustration.png" alt="Header illustration" /></div>
+      <div class="card-inner"><div class="subtitle">Progress 1 image</div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="media"><video class="resp" src="assets/video/micro-explainer.mp4" controls playsinline></video></div>
+      <div class="card-inner"><div class="subtitle">Progress 2 micro video</div></div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <h2 style="margin:0 0 8px">Key terms</h2>
+        <ul class="list">
+          <li><b>Instrumental</b>: practical tasks (supervision, logistics, chores).</li>
+          <li><b>Emotional</b>: mediator/comforter roles, managing others’ feelings.</li>
+          <li><b>Support</b>: adult backup, boundaries, recognition.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="public">
+    <div class="section-title"><h2>Public conversation</h2><div class="hint">Valenzuela + Sloat</div></div>
+    <div class="card"><div class="card-inner">
+      <p>Replace with final text blocks: what people say, what it captures, what it misses.</p>
+    </div></div>
+  </section>
+
+  <section id="research">
+    <div class="section-title"><h2>Research findings</h2><div class="hint">Dariotis + East & Hamill + Granovetter</div></div>
+    <div class="card"><div class="card-inner">
+      <p>Replace with final text blocks: definitions, mixed outcomes, measurement limits.</p>
+    </div></div>
+  </section>
+
+  <section id="interviews">
+    <div class="section-title"><h2>Interviews</h2><div class="hint">Project 6 + Project 5</div></div>
+    <div class="grid">
+      <div class="card"><div class="card-inner">
+        <h3 style="margin:0 0 6px">Project 6: Professor interview (Q&A)</h3>
+        <p class="subtitle"></span></p>
+        <a class="btn" href="assets/docs/project6-qna.pdf" target="_blank" rel="noreferrer">Open Q&A PDF</a>
+      </div></div>
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 6px">Project 5: Sister vlog</h3>
+          <p class="subtitle">Replace placeholder video in <span style="font-family:var(--mono)">assets/video/sister-vlog.mp4</span></p>
+        </div>
+        <div class="media"><video class="resp" src="assets/video/sister-vlog.mp4" controls playsinline></video></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gap">
+    <div class="section-title"><h2>Methods gap</h2><div class="hint">what to measure next</div></div>
+    <div class="card"><div class="card-inner">
+      <ul class="list">
+        <li>Task-specific measurement (instrumental vs emotional).</li>
+        <li>Timing/intensity (start age, duration, frequency).</li>
+        <li>Support/fairness cues (boundaries, adult backup, recognition).</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section id="refs">
+    <div class="section-title"><h2>References</h2><div class="hint">APA</div></div>
+    <div class="card"><div class="card-inner">
+      <div class="ref">Dariotis et al. (2023) ...
+East & Hamill (2013) ...
+Granovetter et al. (2023) ...
+Sloat (2023) ...
+Valenzuela (2022) ...</div>
+    </div></div>
+  </section>
+
+  <footer>Run locally: <span style="font-family:var(--mono)">python3 -m http.server 8000</span></footer>
+</main>
+
+<script>
+  const ids = ["home","public","research","interviews","gap","refs"].map(id => document.getElementById(id));
+  const links = Array.from(document.querySelectorAll("#navLinks a"));
+  const onScroll = () => {
+    const y = window.scrollY + 90;
+    let current = "home";
+    for (const s of ids) if (s && s.offsetTop <= y) current = s.id;
+    links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${current}`));
+  };
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+</script>
+</body>
+</html>
